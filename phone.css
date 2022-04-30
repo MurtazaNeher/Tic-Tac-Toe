@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&family=Quicksand:wght@600;700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --border-color: white;
+    --bg-color: black;
+    --font-color: white;
+    --primary-color: royalblue;
+    --game-font: 'Quicksand', sans-serif;
+    --baalo-bhai: 'Baloo 2', cursive;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-family: var(--baalo-bhai);
+}
+
+main {
+    /* background-color: wheat; */
+    height: 80vh;
+}
+
+#header {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+}
+
+#header-heading {
+    font-size: 45px;
+    color: royalblue;
+}
+
+#score-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 2px solid var(--border-color);
+    padding: 7px;
+    font-size: 19px;
+    background-color: royalblue;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#score-box div {
+    margin: 8px;
+}
+
+.turn {
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+#container-first,
+#container-second,
+#container-third {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    border: 2px solid var(--border-color);
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 80px;
+    font-family: var(--game-font);
+}
+
+.box:hover {
+    cursor: pointer;
+}
+
+#box-1 {
+    border-top: none;
+    border-left: none;
+}
+
+#box-2 {
+    border-top: none;
+}
+
+#box-3 {
+    border-top: none;
+    border-right: none;
+}
+
+#box-4 {
+    border-left: none;
+}
+
+#box-6 {
+    border-right: none;
+}
+
+#box-7 {
+    border-left: none;
+    border-bottom: none;
+}
+
+#box-8 {
+    border-bottom: none;
+}
+
+#box-9 {
+    border-right: none;
+    border-bottom: none;
+}
+
+#clear-btn,
+#reset-btn {
+    background-color: royalblue;
+    width: 110px;
+    height: 60px;
+    position: relative;
+    border-radius: 9px;
+    border: none;
+    color: white;
+    font-family: var(--baalo-bhai);
+    font-size: 30px;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    /* box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.4); */
+    box-shadow: 5px 5px white;
+    margin: 20px auto;
+}
+
+#reset-btn {
+    left: auto;
+    right: auto;
+}
+
+#clear-btn:hover,
+#reset-btn:hover {
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 11px;
+    box-shadow: 5px 5px royalblue;
+    transition: 0.2s;
+}
+
+#btn-container {
+    padding: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer {
+    background-color: gray;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 30px; */
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+
+#footer a:hover {
+    color: black;
+    background-color: aliceblue;
+    border-radius: 5px;
+}
