@@ -1,6 +1,8 @@
 const turn = document.querySelector("#turn");
 const xScore = document.querySelector("#x-score");
+const xScoreHead = document.querySelector(".x-score");
 const oScore = document.querySelector("#o-score");
+const oScoreHead = document.querySelector(".o-score");
 const totalMatches = document.querySelector("#total-matches");
 const drawMatches = document.querySelector("#draw-matches");
 const b1 = document.querySelector("#box-1");
@@ -14,6 +16,7 @@ const b8 = document.querySelector("#box-8");
 const b9 = document.querySelector("#box-9");
 const clearBtn = document.querySelector("#clear-btn");
 const resetBtn = document.querySelector("#reset-btn");
+const multiplayerDiv = document.querySelector("#multiplayer-div");
 
 let chance = 0;
 let gameStart = 0;
@@ -21,8 +24,7 @@ let xScoreVar = 0;
 let oScoreVar = 0;
 let numberOfGamesPlayed = 0;
 let numberOfMatchesDrawn = 0;
-turn.innerHTML = "Turn : o"
-
+turn.innerHTML = "Turn : o";
 
 function boxClickHAndler() {
 
