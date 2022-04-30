@@ -199,6 +199,7 @@ function reset() {
     xScoreVar = 0;
     oScoreVar = 0;
     numberOfGamesPlayed = 0;
+    numberOfMatchesDrawn = 0;
     turn.style.color = "white";
     turn.innerHTML = "Turn : o";
     showScore();
