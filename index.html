@@ -15,25 +15,42 @@
     </header>
     <main id="main">
         <div id="score-box">
-            <div id="x-score">X :</div>
-            <div id="o-score">O :</div>
+            <div class="x-score">Total Matches : <span id="total-matches"></span></div>
+            <div class="x-score">X - score : <span id="x-score"></span></div>
+            <div class="o-score">O - score : <span id="o-score"></span></div>
+            <div class="matches-drawn">Draw : <span id="draw-matches"></span></div>
         </div>
-        <div id="turn">Turn : </div>
+        <div class="turn">
+            <span id="turn"></span>
+        </div>
 
-        <div id="container">
+        <div id="container-first">
             <div class="box" id="box-1"></div>
             <div class="box" id="box-2"></div>
             <div class="box" id="box-3"></div>
+
+        </div>
+
+        <div id="container-second">
+
             <div class="box" id="box-4"></div>
             <div class="box" id="box-5"></div>
             <div class="box" id="box-6"></div>
+        </div>
+
+        <div id="container-third">
+
             <div class="box" id="box-7"></div>
             <div class="box" id="box-8"></div>
             <div class="box" id="box-9"></div>
         </div>
+
+        <button id="clear-btn">clear</button>
+        <button id="reset-btn">reset</button>
     </main>
 
-    <footer id="footer"></footer>
+    <footer id="footer"><a href="https://murtazaneherwala.netlify.app/"> DEV : Murtaza Neher Wala </a></footer>
+    <script src="/app.js"></script>
 </body>
 
 </html>
