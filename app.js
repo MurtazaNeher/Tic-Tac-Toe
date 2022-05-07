@@ -158,7 +158,7 @@ function checkDraw() {
 }
 
 function clear() {
-    console.log("clear")
+
     b1.innerHTML = b2.innerHTML = b3.innerHTML = b4.innerHTML = b5.innerHTML = b6.innerHTML = b7.innerHTML = b8.innerHTML = b9.innerHTML = "";
 
     if (gameStart == 0) {

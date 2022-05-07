@@ -145,6 +145,7 @@ main {
     border-radius: 11px;
     box-shadow: 5px 5px royalblue;
     transition: 0.2s;
+    cursor: pointer;
 }
 
 #footer {
